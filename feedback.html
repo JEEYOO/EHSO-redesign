@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Feedback</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/search.js"></script>
+		<script type="text/javascript" src="fbform.js"></script>
+
+	</head>
+	
+	<body>
+ 		<div id="paper">
+		<div id="logo">
+			<img src="images/EHSO-logo.png" alt="Logo" width="150" height="150">
+		</div>	
+		
+		<div id="header">
+			<h1>Environment, Health and Safety Online</h1>
+		</div>
+
+		<div id="left-content">
+                <ul id='navigation-box'>
+                    <li><a href='home.html'>- Home</a></li>
+                    <li><a href='EHSO.html'>- EHSO</a></li>
+                    <li><a href='alphabetic-contents.html'>- Alphabetic Contents</a></li>
+                    <li><a href='links.html'>- Links</a></li>
+                    <li><a href='question-and-answers.html'>- Q & A</a></li>
+                    <li><a href='contact-info.html'>- Contact Info</a></li>
+                    <li><a href='feedback.html'>- Feedback</a></li>
+                </ul>
+            </div>
+		<div id="gsearch">
+		<gcse:search></gcse:search>
+		</div>
+
+			
+		<div id="centre-content">
+				<!--<span class="contact-title">Feedback </span>
+				<hr>-->
+				<div>
+					<h1> Feedback </h1>
+					<hr noshade>
+				</div>	
+				
+					<div id="fbground">
+						<table class="ftable">
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> EHSO website </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Company (EHSO) </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Technical question </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Editorials  </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Training classes </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Consulting services </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> At home/school </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> At work  </td>
+							</tr> 	 
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> EPA,environmental</td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> OSHA, safety </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> DOT, transportation  </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Personal protective </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Air filters </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Water purifiers </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Nuclear, radioactive </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Products sold on EHSO </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Asbestos </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> PCB's </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Recycling batteries </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Recycling - other  </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Food safety </td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Bio-terrorism </td>
+							</tr>
+							<tr>	
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Superfund, waste cleanup</td>
+								<td><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="EHSO website"> Spills and spill cleanup</td>
+							</tr>
+							
+ <!--	 
+ 	  
+  
+ 	 
+ 	 
+ 	 
+ 	 
+ 	 
+ 	 
+ Recommend a link to:  
+ Report a broken link :  
+ Other, please briefly describe:
+ -->
+							<tr>
+								<td colspan="2"><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="Recommend a link to:"> Recommend a link to:        <input type="text"value="http://www." size="30"  style="background-color: #FFFFCC"></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input TYPE=CHECKBOX NAME="whatabout[]" VALUE="Report a broken link :"> Report a broken link :       <input type="text"value="http://www." size="30"  style="background-color: #FFFFCC"></td>
+							</tr>
+							
+						</table>
+						<br>
+						Would you like a response?
+						
+						<p class="warning">
+						If you'd like a response, please tell us how to get in touch with you: (NO information is EVER given out to mailing lists, marketers, etc.)
+						</p>
+						
+						<p>Name<textarea id="name" cols="40" rows="1" style="background-color: #FFFFCC" onclick="if(this.value=='Name'){this.value=''}"></textarea>
+						<p>email<textarea id="email" cols="40" rows="1" style="background-color: #FFFFCC" onclick="if(this.value=='email'){this.value=''}"></textarea>
+						<p>Phone<textarea id="phone" cols="40" rows="1" style="background-color: #FFFFCC" onclick="if(this.value=='Phone'){this.value=''}"></textarea>
+						<p>fax<textarea id="fax" cols="40" rows="1" style="background-color: #FFFFCC" onclick="if(this.value=='fax'){this.value=''}"></textarea>
+						
+						<p><form id="fbsubmit"><button class="submit" action="fbform.js" method="post" id="fbreturn">submit</button></form></p>
+						<!--<form name="fbform1" action="Form.jsp" method="post" onSubmit="formChk();return false"><input class = "submit" type="submit" value="submit" /></form>-->
+						
+					</div>
+		</div>
+			
+		
+			
+		<div id="footer"> 
+				<p>EHSO (<a href="http://www.benivia.com">Benivia, LLC</a>), 12850 Hwy 9, Suite 600-196, Atlanta, GA 30004 - <a href="http://www.ehso.com/privacy-policy.php">Privacy Policy</a> </p>
+				<p>Table of Contents to free guidance and resources: <a href="http://www.ehso.com/contents.php">http://www.ehso.com/contents.php</a></p>
+				<p>Environmental and safety services for business - training, consulting, assessments, ISO14000, report and permit preparations and </p>
+				<p>expert testimony: <a href="http://www.ehso.com/EHSservices/enviserv.htm">http://www.ehso.com/EHSservices/enviserv.htm</a></p>
+				<p>Copyright © 2015 EHSO - Online since 1998</p>
+		
+		</div>
+		</div>
+			
+			
+		
+	</body>
+
+</html>
